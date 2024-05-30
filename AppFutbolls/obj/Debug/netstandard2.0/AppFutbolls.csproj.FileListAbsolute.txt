@@ -1,0 +1,16 @@
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\bin\Debug\netstandard2.0\AppFutbolls.deps.json
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\bin\Debug\netstandard2.0\AppFutbolls.dll
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\bin\Debug\netstandard2.0\ref\AppFutbolls.dll
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\bin\Debug\netstandard2.0\AppFutbolls.pdb
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\AppFutbolls.csproj.AssemblyReference.cache
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\AppFutbolls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\AppFutbolls.AssemblyInfoInputs.cache
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\AppFutbolls.AssemblyInfo.cs
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\AppFutbolls.csproj.CoreCompileInputs.cache
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\AppFutbolls.dll
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\refint\AppFutbolls.dll
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\AppFutbolls.pdb
+C:\Users\JAILER\source\repos\AppFutbolls\AppFutbolls\obj\Debug\netstandard2.0\DetallePartido.xaml.g.cs

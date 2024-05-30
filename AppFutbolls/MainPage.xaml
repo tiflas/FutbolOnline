@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFutbolls.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="https://i.ibb.co/QFcy0Pp/Fondo2.png">
+
+    <StackLayout Padding="10" BackgroundColor="#000">
+        <!-- Encabezado -->
+        <Label Text="Partidos en vivo" TextColor="#fff" FontSize="24" HorizontalOptions="Center" Margin="0,10,0,20"/>
+
+        <!-- Lista de partidos -->
+        <ListView x:Name="MatchesCollectionView" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10" BackgroundColor="#f0f0f0" Margin="0,5,0,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Logos de los equipos -->
+                            <Image Source="{Binding Teams.Home.Logo}"
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                Aspect="AspectFit"
+                                VerticalOptions="Center"
+                                Grid.Column="0"/>
+
+                            <!-- Detalles del partido -->
+                            <StackLayout Grid.Column="1" Margin="10,0,0,0" VerticalOptions="Center">
+                                <Label Text="{Binding Teams.Home.Name}"
+                                    FontSize="Medium"
+                                    FontAttributes="Bold"
+                                    LineBreakMode="TailTruncation"
+                                    TextColor="black"/>
+                                <Label Text="{Binding Goals.Home}"
+                                    FontSize="Medium"
+                                    TextColor="black"
+                                    LineBreakMode="TailTruncation"/>
+                            </StackLayout>
+
+                            <!-- Separador -->
+            
+
+                            <!-- Detalles del partido (continuación) -->
+                            <StackLayout Grid.Column="3" Margin="0,0,10,0" VerticalOptions="Center">
+                                <Label Text="{Binding Teams.Away.Name}"
+                                    FontSize="Medium"
+                                    FontAttributes="Bold"
+                                    LineBreakMode="TailTruncation"
+                                    TextColor="black"/>
+                                <Label Text="{Binding Goals.Away}"
+                                    FontSize="Medium"
+                                    TextColor="black"
+                                    LineBreakMode="TailTruncation"/>
+                            </StackLayout>
+
+                            <!-- Logo del equipo visitante -->
+                            <Image Source="{Binding Teams.Away.Logo}"
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                Aspect="AspectFit"
+                                VerticalOptions="Center"
+                                Grid.Column="4"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="button" Text="Actualizar" Clicked="Actualizar" CornerRadius="10" 
+            FontSize="Large" 
+            FontAttributes="Bold"
+            Margin="0,20,0,0"
+            TextTransform="None"
+            BackgroundColor="#2469F2"
+            TextColor="#fff"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFutbolls.DetallePartido"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="https://i.ibb.co/QFcy0Pp/Fondo2.png">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <!-- Detalle de los equipos y goles -->
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <!-- Detalle del equipo local -->
+                <StackLayout Margin="0,0,20,0" HorizontalOptions="Center">
+                    <Image Source="{Binding Teams.Home.Logo}" HeightRequest="50" WidthRequest="50"/>
+                    <Label Text="{Binding Teams.Home.Name}" FontSize="Large" HorizontalOptions="Center"/>
+                    <Label Text="Goles:" FontSize="Medium" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Goals.Home}" FontSize="Medium" HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <!-- Detalle del equipo visitante -->
+                <StackLayout Margin="20,0,0,0" HorizontalOptions="Center">
+                    <Image Source="{Binding Teams.Away.Logo}" HeightRequest="50" WidthRequest="50"/>
+                    <Label Text="{Binding Teams.Away.Name}" FontSize="Large" HorizontalOptions="Center"/>
+                    <Label Text="Goles:" FontSize="Medium" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Goals.Away}" FontSize="Medium" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Detalle del gol (si se ha marcado alguno) -->
+            <StackLayout>
+                <!-- Detalle del gol del equipo local -->
+                <Label Text="{Binding Event.Player.name}" FontSize="Medium" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <!-- Detalle de la liga -->
+            <StackLayout>
+                <Image Source="{Binding league.Logo}" HeightRequest="50" WidthRequest="50"/>
+                <Label Text="{Binding league.Name}" FontSize="Medium" HorizontalOptions="Center"/>
+                <Label Text="{Binding league.country}" FontSize="Medium" HorizontalOptions="Center"/>
+                <Image Source="{Binding league.flag}" HeightRequest="50" WidthRequest="50"/>
+            </StackLayout>
+
+            <!-- Detalles adicionales del partido -->
+            <StackLayout>
+                <Label Text="Estadio:" FontSize="Medium"/>
+                <Label Text="{Binding Fixture.Venue.Name}" FontSize="Medium"/>
+                <Label Text="Ronda:" FontSize="Medium"/>
+                <Label Text="{Binding league.Round}"/>
+                <Label Text="Minutos Jugados:" FontSize="Medium"/>
+                <Label Text="{Binding Fixture.Status.Elapsed}" FontSize="Medium"/>
+                <Label Text="Árbitro:" FontSize="Medium"/>
+                <Label Text="{Binding Fixture.referee}" FontSize="Medium"/>
+            </StackLayout>
+            <Button x:Name="button" Text="Volver Al panel" Clicked="Volver" CornerRadius="10" 
+                FontSize="Large" 
+                FontAttributes="Bold"
+                Margin="0,20,0,0"
+                TextTransform="None"
+                BackgroundColor="#2469F2"
+                TextColor="#fff"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
